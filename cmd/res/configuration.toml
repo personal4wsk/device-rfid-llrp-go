@@ -26,12 +26,12 @@ File = ""
   [Clients.Data]
   Protocol = "http"
   Host = "localhost"
-  Port = 48080
+  Port = 59880
 
   [Clients.Metadata]
   Protocol = "http"
   Host = "localhost"
-  Port = 48081
+  Port = 59881
 
   [Clients.Logging]
   Protocol = "http"
@@ -57,10 +57,10 @@ File = ""
 
 # List of IPv4 subnets to perform LLRP discovery process on, in CIDR format (X.X.X.X/Y)
 # separated by commas ex: "192.168.1.0/24,10.0.0.0/24"
-DiscoverySubnets = ""
+DiscoverySubnets = "192.168.1.0/24,10.0.0.0/24"
 
 # Maximum simultaneous network probes
-ProbeAsyncLimit = "4000"
+ProbeAsyncLimit = "5000"
 
 # Maximum amount of seconds to wait for each IP probe before timing out.
 # This will also be the minimum time the discovery process can take.
